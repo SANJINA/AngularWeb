@@ -1,0 +1,171 @@
+Sanjina Shakya@Lenevo-Sanjina MINGW64 /d/GitBox
+$ ls
+ABC/  BoostrapCoded/  TravelBlog/
+
+Sanjina Shakya@Lenevo-Sanjina MINGW64 /d/GitBox
+$ BoostrapCoded
+bash: BoostrapCoded: command not found
+
+Sanjina Shakya@Lenevo-Sanjina MINGW64 /d/GitBox
+$ cd BoostrapCoded
+
+Sanjina Shakya@Lenevo-Sanjina MINGW64 /d/GitBox/BoostrapCoded (master)
+$ ls
+ls: cannot open directory '.': No such file or directory
+
+Sanjina Shakya@Lenevo-Sanjina MINGW64 /d/GitBox/BoostrapCoded
+$ cd ..
+
+Sanjina Shakya@Lenevo-Sanjina MINGW64 /d/GitBox
+$ ls
+ABC/  BootstrapCoded/  TravelBlog/
+
+Sanjina Shakya@Lenevo-Sanjina MINGW64 /d/GitBox
+$ cd BootstrapCoded
+
+Sanjina Shakya@Lenevo-Sanjina MINGW64 /d/GitBox/BootstrapCoded (master)
+$ git push -u origin master
+error: src refspec master does not match any.
+error: failed to push some refs to 'https://github.com/SANJINA/BootstrapCoded.gi                                                                                            t'
+
+Sanjina Shakya@Lenevo-Sanjina MINGW64 /d/GitBox/BootstrapCoded (master)
+$ git init
+Reinitialized existing Git repository in D:/GitBox/BootstrapCoded/.git/
+
+Sanjina Shakya@Lenevo-Sanjina MINGW64 /d/GitBox/BootstrapCoded (master)
+$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Bootstrap Components/
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Sanjina Shakya@Lenevo-Sanjina MINGW64 /d/GitBox/BootstrapCoded (master)
+$ git add -A
+warning: LF will be replaced by CRLF in Bootstrap Components/css/bootstrap-theme                                                                                            .css.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Bootstrap Components/css/bootstrap-theme                                                                                            .min.css.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Bootstrap Components/css/bootstrap.css.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Bootstrap Components/css/bootstrap.min.c                                                                                            ss.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Bootstrap Components/js/bootstrap.js.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Bootstrap Components/js/bootstrap.min.js                                                                                            .
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Bootstrap Components/js/npm.js.
+The file will have its original line endings in your working directory.
+
+Sanjina Shakya@Lenevo-Sanjina MINGW64 /d/GitBox/BootstrapCoded (master)
+$ git add index.htmal
+fatal: pathspec 'index.htmal' did not match any files
+
+Sanjina Shakya@Lenevo-Sanjina MINGW64 /d/GitBox/BootstrapCoded (master)
+$ git add index.html
+
+Sanjina Shakya@Lenevo-Sanjina MINGW64 /d/GitBox/BootstrapCoded (master)
+$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   Bootstrap Components/css/bootstrap-theme.css
+        new file:   Bootstrap Components/css/bootstrap-theme.css.map
+        new file:   Bootstrap Components/css/bootstrap-theme.min.css
+        new file:   Bootstrap Components/css/bootstrap-theme.min.css.map
+        new file:   Bootstrap Components/css/bootstrap.css
+        new file:   Bootstrap Components/css/bootstrap.css.map
+        new file:   Bootstrap Components/css/bootstrap.min.css
+        new file:   Bootstrap Components/css/bootstrap.min.css.map
+        new file:   Bootstrap Components/js/bootstrap.js
+        new file:   Bootstrap Components/js/bootstrap.min.js
+        new file:   Bootstrap Components/js/npm.js
+        new file:   index.html
+
+
+Sanjina Shakya@Lenevo-Sanjina MINGW64 /d/GitBox/BootstrapCoded (master)
+$ git commit -m 'footer section added'
+[master (root-commit) d494a79] footer section added
+ 12 files changed, 9787 insertions(+)
+ create mode 100644 Bootstrap Components/css/bootstrap-theme.css
+ create mode 100644 Bootstrap Components/css/bootstrap-theme.css.map
+ create mode 100644 Bootstrap Components/css/bootstrap-theme.min.css
+ create mode 100644 Bootstrap Components/css/bootstrap-theme.min.css.map
+ create mode 100644 Bootstrap Components/css/bootstrap.css
+ create mode 100644 Bootstrap Components/css/bootstrap.css.map
+ create mode 100644 Bootstrap Components/css/bootstrap.min.css
+ create mode 100644 Bootstrap Components/css/bootstrap.min.css.map
+ create mode 100644 Bootstrap Components/js/bootstrap.js
+ create mode 100644 Bootstrap Components/js/bootstrap.min.js
+ create mode 100644 Bootstrap Components/js/npm.js
+ create mode 100644 index.html
+
+Sanjina Shakya@Lenevo-Sanjina MINGW64 /d/GitBox/BootstrapCoded (master)
+$ git push -u origin master
+To https://github.com/SANJINA/BootstrapCoded.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/SANJINA/BootstrapCoded.gi                                                                                            t'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Sanjina Shakya@Lenevo-Sanjina MINGW64 /d/GitBox/BootstrapCoded (master)
+$ git pull origin master
+warning: no common commits
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/SANJINA/BootstrapCoded
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> origin/master
+fatal: refusing to merge unrelated histories
+
+Sanjina Shakya@Lenevo-Sanjina MINGW64 /d/GitBox/BootstrapCoded (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Sanjina Shakya@Lenevo-Sanjina MINGW64 /d/GitBox/BootstrapCoded (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Sanjina Shakya@Lenevo-Sanjina MINGW64 /d/GitBox/BootstrapCoded (master)
+$ git add html.index
+fatal: pathspec 'html.index' did not match any files
+
+Sanjina Shakya@Lenevo-Sanjina MINGW64 /d/GitBox/BootstrapCoded (master)
+$ git add index.html
+
+Sanjina Shakya@Lenevo-Sanjina MINGW64 /d/GitBox/BootstrapCoded (master)
+$ git commit -m 'menu section modified with highlighted text'
+[master 7868218] menu section modified with highlighted text
+ 1 file changed, 2 insertions(+)
+
+Sanjina Shakya@Lenevo-Sanjina MINGW64 /d/GitBox/BootstrapCoded (master)
+$ git push origin master
+To https://github.com/SANJINA/BootstrapCoded.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/SANJINA/BootstrapCoded.gi                                                                                            t'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
