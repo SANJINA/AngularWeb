@@ -4,13 +4,13 @@
 
 <!-- your webpage info goes here -->
 
-    <title>My First Website</title>
+    <title>Website-ABC</title>
 	
 	<meta name="author" content="your name" />
 	<meta name="description" content="" />
 
 <!-- you should always add your stylesheet (css) in the head tag so that it starts loading before the page html is being displayed -->	
-	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
 	
 </head>
 <body>
@@ -19,7 +19,7 @@
 
 	<div id="page">
 		<div id="logo">
-			<h1><a href="/" id="logoLink">My First Website</a></h1>
+			<h1><a href="/" id="logoLink">Website-ABC</a></h1>
             <h2><a href="http://git-lectures.github.io/" id="gitLink">Git Tutorial</a></h2>
 		</div>
 		<div id="nav">
@@ -33,7 +33,21 @@
 		</div>
 		<div id="content">
 			<h2>Home</h2>
-			<h3>Hello World</h3>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4">
+					col1	
+					</div>
+					<div class="col-sm-4">
+					col2	
+					</div>
+					<div class="col-sm-4">
+					col3	
+					</div>
+					
+				</div>
+			</div>
+			
 			<p>
 				This is my first webpage! I was able to code all the HTML and CSS in order to make it. Watch out world of web design here I come!
 			</p>
@@ -47,5 +61,7 @@
 			</p>
 		</div>
 	</div>
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
