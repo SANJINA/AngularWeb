@@ -1,67 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+<!--add ng-app directive in html page-->
+<html ng-app>
+
 <head>
 
-<!-- your webpage info goes here -->
+	<!-- required meta tags always comes first -->
+	<meta name="viewport" content="width=device-width, initital-scale=1, shrink-to-fit=no">
+	<meta charset="utf-8">
+	<meta http-equiv='x-ua-compatible'>
 
-    <title>Website-ABC</title>
-	
+	<!-- your webpage info goes here -->
+	<title>Website-ABC</title>
 	<meta name="author" content="your name" />
 	<meta name="description" content="" />
 
-<!-- you should always add your stylesheet (css) in the head tag so that it starts loading before the page html is being displayed -->	
-	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
-	
-</head>
-<body>
 
-<!-- webpage content goes here in the body -->
+	<!-- you should always add your stylesheet (css) in the head tag so that it starts loading before the page html is being displayed -->
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+	<!--<link rel="stylesheet" href="bower_components/angular-ui-id/less/ui-grid.min.css" type="text/css" />-->
+
+	<script src="bower_components/angular/angular.min.js"></script>
+
+	<!--<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular-resource.min.js"></script>
+	<script src="bower_components/angular-ui-grid/less/ui-grid.min.js">
+	<script src="Scripts/gridscripts/app.js"></script>-->
+</head>
+
+<body>
 
 	<div id="page">
 		<div id="logo">
 			<h1><a href="/" id="logoLink">Website-ABC</a></h1>
-            <h2><a href="http://git-lectures.github.io/" id="gitLink">Git Tutorial</a></h2>
+			<h2><a href="http://git-lectures.github.io/" id="gitLink">Git Tutorial</a></h2>
 		</div>
-		<div id="nav">
-			<ul>
-				<li><a href="#/home.html">Home</a></li>
-				<li><a href="#/tutorials.html">Tutorials</a></li>
-                <li><a href="#/projects.html">Projects</a></li>
-				<li><a href="#/about.html">About</a></li>
-				<li><a href="#/contact.html">Contact</a></li>
-			</ul>	
+		<div id="nav" <ul>
+			<li><a href="#/home.html">Home</a></li>
+			<li><a href="#/tutorials.html">Tutorials</a></li>
+			<li><a href="#/projects.html">Projects</a></li>
+			<li><a href="#/about.html">About</a></li>
+			<li><a href="#/contact.html">Contact</a></li>
+			</ul>
 		</div>
-		<div id="content">
 
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-4">
-					col1	
-					</div>
-					<div class="col-sm-4">
-					col2	
-					</div>
-					<div class="col-sm-4">
-					col3	
-					</div>
-					
-				</div>
-			</div>
-			
-			<p>
-				This is my first webpage! I was able to code all the HTML and CSS in order to make it. Watch out world of web design here I come!
-			</p>
-			<p> 
-				I can use my skills here to create websites for my business, my friends and family, my C.V, blog or articles. As well as any games or more experiment stuff (which is what the web is really all about). 
-			</p>
-		</div>
-		<div id="footer">
-			<p>
-				Webpage made by <a href="/" target="_blank">[your name]</a>
-			</p>
-		</div>
+		Enter Name: <input type="text" ng-model="nameText" />
+		<h3>Your are my favourite {{ nameText}} !</h3>
+
+
+		<p>
+			This is my first webpage! I was able to code all the HTML and CSS in order to make it. Watch out world of web design here
+			I come!
+		</p>
+		<p>
+			I can use my skills here to create websites for my business, my friends and family, my C.V, blog or articles. As well as
+			any games or more experiment stuff (which is what the web is really all about).
+		</p>
+	</div>
+	<div id="footer">
+		<p>
+			Webpage made by <a href="/" target="_blank">[your name]</a>
+		</p>
+	</div>
 	</div>
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
 </body>
+
 </html>
